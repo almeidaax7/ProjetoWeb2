@@ -6,10 +6,12 @@ body {
   color: #333;
 }
 header {
-  background: #222;
-  color: white;
-  padding: 1em;
-  text-align: center;
+  .navbar{
+    background: #222 !important;
+    color: white !important;
+    padding: 1em;
+    text-align: center !important;
+}
 }
 nav a {
   margin: 0 10px;
