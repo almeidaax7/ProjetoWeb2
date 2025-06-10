@@ -2,23 +2,37 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f0f0f0;
+  background-color: #f0f0f0;
   color: #333;
 }
-header {
-  .navbar{
-    background: #222 !important;
-    color: white !important;
-    padding: 1em;
-    text-align: center !important;
+.logo{
+  width: 70px;
+  position: absolute;
+  left: 40px;
+
 }
+
+header{
+  margin-bottom: 70px;
+  background-color: white;
 }
-nav a {
-  margin: 0 10px;
-  color: white;
-  text-decoration: none;
+  .navbar {
+  padding: 1em;
+  background-color: white;
 }
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.servicos{
+  margin-top: 200px;
+}
+
+
 section {
+  
   padding: 2em;
   background: white;
   margin: 1em;

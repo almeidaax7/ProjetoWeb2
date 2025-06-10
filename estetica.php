@@ -3,44 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Estética & Lavagens de Motos</title>
+  <title>Lino Estética Motors</title>
   <link rel="stylesheet" href="estetica.css" />
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 </head>
 <body>
     <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="text-center">
-    <a class="navbar-brand" href="#">Estética & Lavagens de Motos</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Serviços</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Sobre</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contato</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-</header>
-  <!-- <header>
-    <h1>Estética & Lavagens de Motos</h1>
-    <nav>
-      <a href="#servicos">Serviços</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#contato">Contato</a>
-    </nav>
-  </header> -->
+  <nav class="navbar navbar-expand-lg bg-white">
+    <div class="container-fluid position-relative">
 
+      
+      <a class="navbar-brand position-absolute start-50 translate-middle-x text-center" href="#">
+        Lino Estética Motors
+      </a>
+
+      
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <div style="display: flex; justify-content: flex-end;">
+            <img class="logo" src="img/logo.png" alt="Logo Do Site">
+
+            <a class="nav-link active" href="#">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+  
   <section id="servicos">
     <h2>Nossos Serviços</h2>
     <ul>
