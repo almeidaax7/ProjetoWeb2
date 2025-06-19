@@ -1,12 +1,25 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $nome = $_POST["nome"];
-  $email = $_POST["email"];
-  $mensagem = $_POST["mensagem"];
+    $nome = htmlspecialchars(trim($_POST['nome']));
+    $email = htmlspecialchars(trim($_POST['email']));
+    $mensagem = htmlspecialchars(trim($_POST['mensagem']));
 
-  // Exemplo: salvar em arquivo ou enviar por email
-  // file_put_contents("mensagens.txt", "$nome <$email>: $mensagem\n", FILE_APPEND);
+    $destinatario = "seu-email@exemplo.com"; // **SEU E-MAIL AQUI**
+    $assunto = "Nova mensagem do site Lino Estética Motors";
+    $corpo_email = "Nome: $nome\n";
+    $corpo_email .= "Email: $email\n";
+    $corpo_email .= "Mensagem:\n$mensagem\n";
 
-  echo "Obrigado, $nome. Entraremos em contato!";
+    $headers = "From: $email\r\n";
+    $headers .= "Reply-To: $email\r\n";
+    $headers .= "Content-type: text/plain; charset=UTF-8\r\n";
+
+    if (mail($destinatario, $assunto, $corpo_email, $headers)) {
+        echo "Mensagem enviada com sucesso!";
+    } else {
+        echo "Erro ao enviar a mensagem. Tente novamente mais tarde.";
+    }
+} else {
+    echo "Método de requisição inválido.";
 }
 ?>
