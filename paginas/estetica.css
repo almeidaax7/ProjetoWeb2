@@ -1,50 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 body {
-    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f8f9fa; 
+    background-color: #1E2125; 
 }
 
 
 
 /* --- Navegação --- */
-.navbar {
-    background-color: #fff !important; 
-    border-bottom: 1px solid #eee;
-}
-
 .navbar-brand .logo {
-    height: 40px; /* Tamanho da logo */
+    height: 80px; /* Tamanho da logo */
 }
 
 .navbar-brand .nome-empresa {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #333;
+    color: #ffffff;
+    font-family: 'Montserrat';
 }
 
 .navbar-nav .nav-link {
-    color: #555 !important;
-    font-weight: 500;
-    margin-right: 20px;
-    transition: color 0.3s ease;
+    color: #ffffff;
+    font-size: large;
+    font-family: 'Montserrat';
 }
 
 .navbar-nav .nav-link:hover {
-    color: #007bff !important; /* Cor de destaque ao passar o mouse */
+    color: #3451d1 !important;
+    transition: all 0.2s;
+    transform: scale(1.08);
 }
-
-/* --- Seção Hero (Banner Principal) --- */
+.card-body{
+    font-family: 'Montserrat';
+}
+.list-group{
+    font-family: 'Playfair Display';
+    font-size: large;
+}
+.tampa{
+    transition: all 0.6s ease-in-out;
+}
+.tampa:hover{
+    content: url('../img/tampalimpa.jpeg');
+}
+/* Banner Principal*/
 #hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://via.placeholder.com/1920x600/333/fff?text=Sua+Moto+Impecável') center center no-repeat; /* Imagem de fundo */
+    background-image: url(../artes/banner.jpg);
     background-size: cover;
-    min-height: 500px; /* Altura mínima do banner */
+    min-height: 600px; /* Altura mínima do banner */
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    font-family: 'Roboto';
 }
 
 #hero h1 {
@@ -56,23 +66,6 @@ body {
 #hero p.lead {
     font-size: 1.5rem;
     margin-bottom: 30px;
-}
-
-.btn-whatsapp-hero {
-    background-color: #25d366;
-    color: #fff;
-    padding: 12px 30px;
-    border-radius: 50px;
-    font-size: 1.2rem;
-    font-weight: 700;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    text-decoration: none;
-}
-
-.btn-whatsapp-hero:hover {
-    background-color: #1ea852;
-    transform: translateY(-3px);
-    color: #fff;
 }
 
 /* --- Seções Gerais --- */
@@ -147,7 +140,6 @@ section h2::after {
     height: auto;
     object-fit: cover;
 }
-
 /* --- Seção de Contato --- */
 #contato .form-control {
     border-radius: 5px;
@@ -221,7 +213,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    font-size: 0.9rem;
 }
 
 /* --- Responsividade (Media Queries) --- */
