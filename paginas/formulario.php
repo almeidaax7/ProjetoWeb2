@@ -28,6 +28,14 @@
                                 <input type="email" class="form-control" id="email" name="email" placeholder="Seu e-mail" required />
                             </div>
                             <div class="mb-3">
+        <label for="telefone" class="form-label">Telefone</label>
+        <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required />
+    </div>
+    <div class="mb-3">
+        <label for="cidade" class="form-label">Sua Cidade</label>
+        <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Ex: Campo Mourão" required />
+    </div>
+                            <div class="mb-3">
                                 <label for="mensagem" class="form-label">Mensagem</label>
                                 <textarea class="form-control" id="mensagem" name="mensagem" rows="5" placeholder="Sua mensagem..." required></textarea>
                             </div>
@@ -37,6 +45,10 @@
                                     <i class="fab fa-whatsapp"></i> Chamar no WhatsApp
                                 </a>
                             </div>
+                            <div class="mb-3">
+    <label for="avaliacao" class="form-label">Nota para o Atendimento (0 a 10)</label>
+    <input type="number" class="form-control" id="avaliacao" name="avaliacao" min="0" max="10" placeholder="Ex: 9" required />
+</div>
                             <p id="mensagemStatus" class="mt-3 text-center"></p>
                         </form>
                     </div>

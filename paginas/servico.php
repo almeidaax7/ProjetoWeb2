@@ -67,7 +67,7 @@
         <h3 class="text-center text-light">Veja o antes e depois</h3>
        <div class="container my-5">
   <div class="row justify-content-center">
-    <div class="col-12 col-md-10 col-lg-6"> <!-- col-lg-6 reduz largura no desktop -->
+    <div class="col-12 col-md-10 col-lg-6"> 
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
