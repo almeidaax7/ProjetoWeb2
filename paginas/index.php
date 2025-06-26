@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="estetica.css" />
 </head>
@@ -32,9 +33,10 @@
 
     <div style="height: 100px;"></div>
 
-    <h3 class="text-center mb-4 text-light">Conheça um pouco dos nossos trabalhos</h3>
-    <div class="d-flex justify-content-center">
-  <div class="card bg-dark text-white me-5" style="width: 20rem;">
+<h3 class="text-center mb-4 text-light" data-aos="fade-up">Conheça um pouco dos nossos trabalhos</h3>
+
+<div class="d-flex justify-content-center">
+  <div class="card bg-dark text-white me-5" style="width: 20rem;" data-aos="fade-right">
     <img src="../img/xrelimpa.jpeg" class="card-img-top" alt="xre">
     <div class="card-body">
       <p class="card-text">Aqui sua moto sempre recebe o melhor cuidado!</p>
@@ -49,7 +51,7 @@
     </div>
   </div>
 
-  <div class="card bg-dark text-white ms-5" style="width: 20rem;">
+  <div class="card bg-dark text-white ms-5" style="width: 20rem;" data-aos="fade-left">
     <img src="../img/tampasuja.jpeg" class="card-img-top tampa" alt="xre">
     <div class="card-body">
       <p class="card-text">Passe o mouse para ver a magia!</p>
@@ -71,5 +73,10 @@
     ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </body>
 </html>
