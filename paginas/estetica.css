@@ -46,7 +46,7 @@ body {
 }
 /* Banner Principal*/
 #hero {
-    background-image: url(../artes/banner.jpg);
+    background-image: url(../artes/banner.png);
     background-size: cover;
     min-height: 600px; /* Altura mínima do banner */
     color: #fff;
